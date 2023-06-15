@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conversor de Moneda</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Conversor de Moneda</h1>
+  
+  <label for="cantidad">Cantidad:</label>
+  <input type="number" id="cantidad" placeholder="Cantidad a convertir">
+  
+  <label for="moneda">Moneda:</label>
+  <select id="moneda">
+    <option value="pesos">Pesos Mexicanos (MXN) a Dólares (USD)</option>
+    <option value="dolares">Dólares (USD) a Pesos Mexicanos (MXN)</option>
+  </select>
+  
+  <label for="precioDolar">Precio del Dólar:</label>
+  <input type="number" id="precioDolar" placeholder="Precio del dólar">
+  
+  <button onclick="convertir()">Convertir</button>
+  
+  <div id="resultado"></div>
+
+  <script src="convertir.js"></script>
+</body>
+</html>
+
